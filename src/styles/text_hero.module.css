@@ -1,0 +1,200 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  
+  }
+
+  .style{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+
+    background-size: contain;
+    background-image: url('../../public/bg_repetead.jpg');
+    background-position: center;;
+    background-repeat:repeat;
+
+    opacity: 0.1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+
+
+
+  .text_hero{
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 2;
+  }
+  
+  .text_row{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  
+  .text_column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .text_highligth{
+    color: #CEA43A;
+  }
+  
+  
+  
+  .text_300{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 0px;
+  }
+  
+  .text_240{
+    line-height: 40px;
+    font-size: 60px;
+  }
+  
+  .text_180{
+    line-height: 18px;
+    font-size: 30px;
+  }
+  
+  .text_80{
+    font-size: 20px;
+    line-height: 0;
+  }
+  
+  .coma{
+    font-size: 40px;
+    color: #CEA43A;
+  }
+  
+  
+  .text_highligth_container{
+    margin-top: 10px;
+  }
+  
+  /* text and & then */
+  .text_and{
+    line-height: 0px;
+  }
+  .text_then{
+    line-height: 15px;
+  }
+  
+  
+  
+  /* -------- */
+  @media (min-width:900px){
+    .style{
+      background-repeat: no-repeat;
+    }
+  
+
+
+
+    .text_300{
+      font-size: 130px;
+      font-weight: 700;
+      line-height: 0px;
+    }
+    
+    .text_240{
+      font-size: 100px;
+      line-height: 70px;
+    }
+    
+    .text_180{
+      line-height: 40px;
+      font-size: 60px;
+    }
+    .text_80{
+      font-size: 30px;
+    }
+    
+    
+    .coma{
+      font-size: 30px;
+      color: #CEA43A;
+    }
+    
+    .text_highligth_container{
+      margin-top: 6px;
+    }
+  
+    .text_final{
+      margin-top: -5px;
+    }
+  
+    /* text and & then */
+    .text_and{
+      line-height: 20px;
+    }
+    .text_then{
+      line-height: 20px;
+    }
+  
+  }
+  
+  
+  
+  @media (min-width: 1980px) {
+  
+    .text_column{
+      gap: 20px;
+    }
+  
+    .text_300{
+      font-size: 300px;
+      font-weight: 700;
+      line-height: 0px;
+    }
+    
+    .text_240{
+      font-size: 240px;
+      line-height: 100px;
+    }
+    
+    .coma{
+      font-size: 80px;
+      color: #CEA43A;
+    }
+    .text_80{
+      font-size: 80px;
+      line-height: 120px;
+    }
+    
+    .text_180{
+      line-height: 30px;
+      font-size: 140px;
+    }
+    
+    .text_highligth_container{
+      margin-top: 100px;
+    }
+  
+    .text_final{
+      margin-top: 0px;
+    }
+    
+    /* text and & then */
+    .text_and{
+      line-height: 140px;
+    }
+    .text_then{
+      line-height: 0px;
+    }
+  
+    /* -------- */
+  
+  }

@@ -1,0 +1,250 @@
+/* FIRST ROW */
+.who_is{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.who_is div{
+    max-width: 1600px;
+    height: fit-content;
+    margin: 0px 50px;
+    position: relative;
+}
+
+.background_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(15%);
+    z-index: 1;
+    transition: all .9s ease-in;
+}
+
+.who_is div article p{
+    transition: all .9s ease-in;
+}
+.who_is div article:hover .background_image{
+    filter: brightness(35%);
+}
+.who_is div article:hover p{
+    opacity: 0;
+}
+
+.first_row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first_row article{
+    position: relative;
+    border-radius: 30px;
+    font-size: clamp(20px, 5vw, 58px);
+    font-weight: 600;
+    height: 400px;
+}
+
+.first_row article:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.first_row article:first-child p{
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.first_row article:last-child{
+
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: transparent;
+
+}
+
+.icon_container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.icon{
+    transition: all .5s ease-in-out;
+}
+
+.icon_container:hover .icon{
+    transform: scale(1.5);
+}
+
+.icon_container:nth-child(1){
+    background-color: rgb(0, 119, 181);
+}
+.icon_container:nth-child(2){
+    background-color: rgb(251, 188, 5);
+}
+.icon_container:nth-child(3){
+    background: rgb(214, 36, 159);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.icon_container:nth-child(4){
+    background-color: #121212;
+}
+
+.highligth_text{
+    color: #CEA43A ;
+}
+/* ---------- */
+
+/* second_row */
+
+.second_row{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second_row article{
+    border-radius: 30px;
+    height: 400px;
+    font-weight: 600;
+    position: relative;
+}
+
+.second_row article:first-child{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    grid-column: span 5 / span 5;
+    font-size: clamp(20px, 5vw, 48px);
+}
+
+.second_row article:first-child p{
+    padding: 60px;
+    z-index: 2;
+}
+
+.second_row article:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    grid-column: span 7 / span 7;
+    font-size: clamp(20px, 5vw, 38px);
+}
+
+.second_row article:last-child p{
+    padding: 20px;
+    z-index: 2;
+}
+  /* -------- */
+  @media (min-width:500px){
+
+/* FIRST ROW */
+
+.who_is div article{
+    background-color: var(--secondary_bg);
+    position: relative;
+}
+
+.first_row article:first-child{
+    align-items: flex-end;
+}
+
+.first_row article:first-child p{
+    text-align: left;
+    padding: 30px;
+}
+
+/* ---------- */
+
+/* second_row */
+
+.second_row article{
+    height: 100%;
+}
+
+
+.second_row article:last-child{
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.second_row article:last-child p{
+    padding: 60px;
+}
+  }
+  
+
+
+  
+@media (min-width: 1480px) {
+/* FIRST ROW */
+.who_is div{
+    height: 600px;
+    margin: 0px auto;
+}
+
+.first_row{
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0 ,1fr));
+}
+
+.first_row article{
+    height: 600px;
+    font-size: clamp(20px, 5vw, 58px);
+}
+
+.first_row article:first-child{
+    align-items: flex-end;
+    grid-column: span 8 / span 8;
+}
+
+.first_row article:first-child p{
+    text-align: left;
+    padding: 60px;
+}
+
+.first_row article:last-child{
+
+    grid-column: span 4 / span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.icon_container{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+
+
+
+/* second_row */
+
+.second_row{
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0 ,1fr));
+}
+
+
+.second_row article:last-child p{
+    padding: 60px;
+}
+
+  }
