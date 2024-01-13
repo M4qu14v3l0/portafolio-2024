@@ -1,13 +1,19 @@
 .project{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 50%;
+    justify-content: center;
     align-items: center;
-    padding: 50px 100px 50px 100px;
+    padding: 20px 40px 20px 40px;
     border-top: 1px solid rgb(201, 201, 201);
     cursor: pointer;
     transition: all 0.2s;
+
 }
+
+.project p{
+    display: none;
+}
+
 .project:last-of-type{
     border-bottom: 1px solid rgb(201, 201, 201);
 }
@@ -26,7 +32,7 @@
 }
 
 .project h2{
-    font-size: 60px;
+    font-size: 18px;
     margin: 0px;
     font-weight: 400;
     transition: all 0.4s;
@@ -36,4 +42,41 @@
 .project p{
     transition: all 0.4s;
     font-weight: 300;
+}
+
+@media (min-width:570px) {
+
+    .project{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .project p{
+        display: flex;
+    }
+
+    .project h2{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width:900px){
+    .project{
+        padding: 40px;
+    }
+}
+
+
+
+
+@media (min-width:1400px){
+    .project{
+        padding: 50px 100px 50px 100px;
+    }
+
+    .project h2{
+        font-size: 60px;
+    }
+    
 }
