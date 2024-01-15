@@ -14,7 +14,9 @@ import { BsInstagram } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import Link from 'next/link'
 
-export const About = () => {
+import  MagneticIcon  from '../magnetic_icon/MagneticIcon'
+
+export const About = () =>  {
 
   const first_container = useRef(null)
   const second_container = useRef(null)
@@ -72,24 +74,32 @@ export const About = () => {
         </article>
         <article>
           <span className={styles.icon_container}>
+              <MagneticIcon>
             <Link href={'https://www.linkedin.com/in/marcelo-llerena-desarrollador-front-end/'} target='_blank'>
-              <RiLinkedinFill className={styles.icon} />
+                <RiLinkedinFill className={styles.icon} />
             </Link>
+              </MagneticIcon>
           </span>
           <span className={styles.icon_container}>
+              <MagneticIcon>
             <Link href={'mailto:marcelo.gabriel.llerena@gmail.com'} target='_blank'>
-              <BiLogoGmail className={styles.icon} />
+                <BiLogoGmail className={styles.icon} />
             </Link>
+              </MagneticIcon>
           </span>
           <span className={styles.icon_container}>
+              <MagneticIcon>
             <Link href={'https://www.instagram.com/_marcelo_llerena/'} target='_blank'>
-              <BsInstagram className={styles.icon} />
+                <BsInstagram className={styles.icon} />
             </Link>
+              </MagneticIcon>
           </span>
           <span className={styles.icon_container}>
+              <MagneticIcon>
             <Link href={'https://github.com/M4qu14v3l0'} target='_blank'>
-              <FaGithub className={styles.icon} />
+                <FaGithub className={styles.icon} />
             </Link>
+              </MagneticIcon>
           </span>
         </article>
       </div>

@@ -79,14 +79,6 @@
     border-radius: 20px;
 }
 
-.icon{
-    transition: all .5s ease-in-out;
-}
-
-.icon_container:hover .icon{
-    transform: scale(1.5);
-}
-
 .icon_container:nth-child(1){
     background-color: rgb(0, 119, 181);
 }

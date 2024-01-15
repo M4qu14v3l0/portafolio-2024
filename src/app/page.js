@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 import styles from './page.module.css'
 
-import { About } from '@/components/bento_grid/About'
+import  {About}  from '@/components/bento_grid/About'
 import { TextHero } from '@/components/TextHero'
 import { Work } from '@/components/Work'
 
