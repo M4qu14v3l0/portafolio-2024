@@ -39,3 +39,13 @@
     font-size: 20px;
 }
 
+
+.link{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+
+    font-size: 80px;
+    z-index: 100;
+}

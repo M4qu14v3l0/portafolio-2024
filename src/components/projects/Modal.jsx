@@ -54,6 +54,7 @@ export const Modal = ({modal , projects}) => {
                     width={300}
                     height={0}
                     alt="image"
+                    priority
                     />
                 </div>
                 })
