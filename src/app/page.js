@@ -22,8 +22,9 @@ export default function Home() {
   return (
     <main className={styles.main_container}>
       <TextHero />
+      {/* 
       <About />
-      <Work />
+      <Work /> */}
     </main>
   )
 }
