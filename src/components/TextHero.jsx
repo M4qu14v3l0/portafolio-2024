@@ -6,7 +6,7 @@ export const TextHero = () => {
         <div className={styles.style}>
         </div>
         <article className={styles.text_hero}>
-            <span className={styles.text_300}>don't</span>
+            <span className={styles.text_300}>don&apos;t</span>
 
             <div className={styles.text_row}>
             <span className={styles.text_240}>be</span>
