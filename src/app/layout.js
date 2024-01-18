@@ -11,10 +11,6 @@ export const metadata = {
   title: 'Marcelo',
   description: "Marcelo is a software developer currently looking for best companies to collaborate with",
   metadataBase: new URL('https://m4qu14v3l0.com'),
-  openGraph:{
-    images: '/opengraph-image.png'
-  },
-  
 }
 
 export default function RootLayout({ children }) {
