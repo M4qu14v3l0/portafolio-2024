@@ -1,4 +1,4 @@
-@import '../../node_modules/locomotive-scroll/dist/locomotive-scroll.css';
+/* @import '../../node_modules/locomotive-scroll/dist/locomotive-scroll.css'; */
 
 :root {
   --primary-text: white;
@@ -42,7 +42,7 @@ body::after{
   position: fixed;
   top: -100%;
   width: 300%;
-  z-index: 20;
+  z-index: 200;
 }
 
 

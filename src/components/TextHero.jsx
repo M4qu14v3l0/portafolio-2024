@@ -1,8 +1,17 @@
 import styles from '@/styles/text_hero.module.css'
+import { Desk } from './desk/Desk'
+import { Suspense } from 'react'
+import Loading from './Loading'
+
+
 
 export const TextHero = () => {
   return (
     <section className={styles.hero}>
+        
+        <Suspense fallback={<Loading />}>
+            <Desk /> 
+        </Suspense>
         <article className={styles.text_hero}>
             <span className={styles.text_300}>don&apos;t</span>
 
