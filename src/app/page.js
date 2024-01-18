@@ -7,6 +7,7 @@ import styles from './page.module.css'
 import  {About}  from '@/components/bento_grid/About'
 import { TextHero } from '@/components/TextHero'
 import { Work } from '@/components/Work'
+import { Title } from '@/components/titles/Title'
 
 export default function Home() {
 
@@ -22,9 +23,10 @@ export default function Home() {
   return (
     <main className={styles.main_container}>
       <TextHero />
-      {/* 
+      <Title first={'About'} second={'me'} id={'about'}/>
       <About />
-      <Work /> */}
+      <Title first={'My'} second={'work'} id={'work'}/>
+      <Work /> 
     </main>
   )
 }

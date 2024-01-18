@@ -7,24 +7,6 @@
     /* margin-bottom: 100px;
    */
   }
-
-  /* .style{
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    overflow: hidden;
-
-    background-size: contain;
-    background-image: url('../../public/bg_repetead.jpg');
-    background-position: center;;
-    background-repeat:repeat;
-
-    opacity: 0.1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-  } */
-
   .text_hero{
     width: 100%;
     display: grid;

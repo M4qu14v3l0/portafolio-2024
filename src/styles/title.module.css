@@ -1,0 +1,20 @@
+.title_container{
+    text-align: center;
+    height: clamp(30vh , 30vw , 70vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -3;
+    padding: 20px;
+
+}
+
+.title{
+    font-size: var(--fs-xl);
+    font-weight: 400;
+}
+
+.title span{
+    font-style: italic;
+    font-weight: 700;
+}

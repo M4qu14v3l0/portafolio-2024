@@ -16,11 +16,18 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        z-index: 10;
     }
 
+
     .navbar ul{
+        background-color: var(--principal-bg);
+
+
+
         list-style: none;
-        padding: 0;
+        padding: 16px;
+        border-radius: 16px;
         margin: 0;
         display: flex;
         justify-content: flex-end;

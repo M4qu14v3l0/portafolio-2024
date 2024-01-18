@@ -1,16 +1,16 @@
 
 import styles from '@/styles/projects.module.css'
-import Link from 'next/link'
 
 
-export const Project = ({index,title,setModal, id}) => {
+export const Project = ({index , title , setModal , id , setObject}) => {
   return (
-    <Link
-    href={`/projects/${id}`}
+    <div
     onMouseEnter={() => {setModal({active:true, index})}} 
-    onMouseLeave={() => {setModal({active:false, index})}} className={styles.project}>
+    onMouseLeave={() => {setModal({active:false, index})}} className={styles.project}
+    onClick={() => {setObject({index})}}
+    >
         <h2>{title}</h2>
         <p>Design & Development</p>
-    </Link>
+    </div>
   )
 }

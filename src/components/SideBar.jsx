@@ -9,21 +9,21 @@ export const SideBar = () => {
     <navbar className={styles.navbar}>
         <ul>
             <li>
-                <Link href={'/'}>   
+                <Link href={'/'} >   
                     <span>01</span>
                     M
                 </Link>
             </li>
 
             <li>
-                <Link href={'/about'}>
+                <Link href={'#about'} >
                 <span>02</span>
                     About
                 </Link>
             </li>
 
             <li>
-                <Link href={'/work'}>
+                <Link href={'#work'} >
                 <span>03</span>
                     Work
                 </Link>

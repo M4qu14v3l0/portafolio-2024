@@ -43,7 +43,7 @@ export const Decorator = ( {color}) => {
     return (
     
     <div className={styles.canvas}>
-        <Canvas orthographic camera={{position: [0,0,200], zoom: 160}}>
+        <Canvas orthographic camera={{position: [0,0,200], zoom: 80}}>
 
             <Model mouse={smoothMouse} color={color}/>
             <Environment preset="studio"/>
