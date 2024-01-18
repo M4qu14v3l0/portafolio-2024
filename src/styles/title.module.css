@@ -1,6 +1,6 @@
 .title_container{
     text-align: center;
-    height: clamp(30vh , 30vw , 70vh);
+    height: clamp(25vh , 30vw , 70vh);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,8 +1,13 @@
 .canvas{
     position: absolute;
-    height: 80vh;
-    width: 80vw;
+    height: 90vh;
+    width: 56vw;
     z-index: 1;
     /* background-color: red; */
     
 }
+@media (max-width:600px) {
+    .canvas{
+        height: 50vh;
+    }
+    }

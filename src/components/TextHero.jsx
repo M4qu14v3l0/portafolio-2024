@@ -7,7 +7,7 @@ import Loading from './Loading'
 
 export const TextHero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id='home'>
         
         <Suspense fallback={<Loading />}>
             <Desk /> 

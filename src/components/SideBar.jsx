@@ -9,7 +9,7 @@ export const SideBar = () => {
     <navbar className={styles.navbar}>
         <ul>
             <li>
-                <Link href={'/'} >   
+                <Link href={'#home'} >   
                     <span>01</span>
                     M
                 </Link>
@@ -28,14 +28,6 @@ export const SideBar = () => {
                     Work
                 </Link>
             </li>
-
-            <li>
-                <Link href={'/'}>
-                <span>04</span>
-                    Contact
-                </Link>
-            </li>
-
         </ul>
     </navbar>
   )

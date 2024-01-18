@@ -1,9 +1,4 @@
 
-.navbar{
-    display: none;
-}
-
-@media (min-width:1000px){
     .navbar{
         position: fixed;
         top: 0;
@@ -57,7 +52,3 @@
         color: var(--secondary-text);
     }
     
-
-
-}
-

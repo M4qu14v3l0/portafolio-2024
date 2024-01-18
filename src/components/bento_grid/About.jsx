@@ -79,7 +79,7 @@ const FirstCol = () => {
               </span>
             </div>
             <MagneticIcon>
-              <Link className={styles.resume} href={"/resume/MarceloCV.pdf"} target='_blank'><FiDownload /> Resume</Link>
+              <Link className={styles.resume} href={"/resume/MarceloCV.pdf"} target='_blank'><FiDownload className={styles.icon_download}/> <p>Resume</p></Link>
             </MagneticIcon>
           </div>
       </article>

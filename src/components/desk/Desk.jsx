@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber"
 import { Model } from "./Model"
 
 import styles from '@/styles/desk.module.css'
-import { Environment, OrbitControls, Stage } from "@react-three/drei"
+import { Environment, OrbitControls, Stage, Stats } from "@react-three/drei"
 
 
 export const Desk = () => {
@@ -18,11 +18,14 @@ export const Desk = () => {
             shadows dpr={[1, 2]} camera={{ fov: 40 }}             
             onCreated={({ gl }) => {
                 gl.domElement.style.touchAction = "none";
-              }}>
+              }}
+            resize={{scroll:false}}
+              >
             <Stage  preset="rembrandt" intensity={1}  environment="city">
             <Model />
+            <OrbitControls autoRotate={true} enableZoom={true} />
             </Stage>
-        <   OrbitControls autoRotate={true} enableZoom={true} />
+            
         </Canvas>
 
 
