@@ -17,10 +17,14 @@ export const metadata = {
     siteName: 'Marcelo Portfolio',
     images: [
       {
-        url: 'https://m4qu14v3l0/og.png',
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
       },
       {
-        url: 'https://m4qu14v3l0.com/og-alt.png',
+        url: 'https://nextjs.org/og.png',
+        width: 1800,
+        height: 1600,
       },
     ],
     locale: 'es_PE',
@@ -31,11 +35,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-
-      <link rel="icon" href="/favicon.ico" sizes="16x16" />
-
-
       <body className={poppins.className}>
         <SideBar />
         {children}
