@@ -1,7 +1,8 @@
 .section_container{
+    margin: 0px auto;
     margin-bottom: 60px;
     height: 100%;
-
+    max-width: 1800px;
 }
 
 .grid{
@@ -63,7 +64,13 @@
         flex-wrap: wrap;
         padding: 20px;
     }
+
+    .projects_container{
+        width: 80%;
+    }
+
     .details{
+        
         height: 400px;
         display: flex;
         flex-direction: column;

@@ -12,6 +12,8 @@
     padding: 0 48px;
     position: relative;
     width: 100%;
+    max-width: 1800px;
+    margin: 0px auto;
 }
 
 .sub_container{
@@ -209,17 +211,11 @@
     .general_container{
         padding: 0 16px;
     }
-
-
-
     .col {
         height: auto;
         width: 100%;
     }
-
 }
-
-
 @media (max-width:460px) {
 
     .data_container{
