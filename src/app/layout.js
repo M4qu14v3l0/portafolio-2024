@@ -9,7 +9,23 @@ const poppins = Poppins({ weight: ['100','200','300','400','500','600','700','80
 
 export const metadata = {
   title: 'Marcelo',
-  description: "Marcelo portfolio",
+  description: "Marcelo is a software developer currently looking for best companies to collaborate with",
+  openGraph: {
+    title: 'Marcelo Portfolio',
+    description: 'Marcelo is a software developer currently looking for best companies to collaborate with',
+    url: 'https://m4qu14v3l0.com',
+    siteName: 'Marcelo Portfolio',
+    images: [
+      {
+        url: 'https://m4qu14v3l0/og.png',
+      },
+      {
+        url: 'https://m4qu14v3l0.com/og-alt.png',
+      },
+    ],
+    locale: 'es_PE',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }) {
