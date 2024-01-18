@@ -50,16 +50,9 @@
 }
 
 
-@media (max-width:600px) {
+/* @media (max-width:600px) {
     .modalContainer{
         height: 140px;
         width: 140px;
-        position: absolute;
-        background-color: white;
-        overflow: hidden;
-        pointer-events: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-}
+} */
