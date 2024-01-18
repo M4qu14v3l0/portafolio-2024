@@ -3,10 +3,11 @@
 
     position: absolute;
 
+    position: absolute;
     top: 50%;
     left: 50%;
-
-
+    transform: translate(-50%, -50%);
+    
     --s: 64px;
     width: var(--s);
     aspect-ratio: 2;
